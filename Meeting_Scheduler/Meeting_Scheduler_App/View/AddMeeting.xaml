@@ -107,7 +107,7 @@
                 </Grid.RowDefinitions>
                 <StackPanel Margin="20,20,0,0">
                     <StackPanel Orientation="Horizontal">
-                        <CheckBox Content="Projector" IsChecked="{Binding CheckProjector, Mode=TwoWay}"  RequestedTheme="Light" Margin="0,0,5,0"/>
+                        <CheckBox Content="Projectorrrrrrrr" IsChecked="{Binding CheckProjector, Mode=TwoWay}"  RequestedTheme="Light" Margin="0,0,5,0"/>
                         <CheckBox Content="Flipchart" IsChecked="{Binding CheckFlipchart, Mode=TwoWay}" RequestedTheme="Light" Margin="0,0,5,0"/>
                         <CheckBox Content="Phone" IsChecked="{Binding CheckPhone, Mode=TwoWay}" RequestedTheme="Light" Margin="0,0,5,0"/>
                         <CheckBox Content="Camera" IsChecked="{Binding CheckCamera, Mode=TwoWay}" RequestedTheme="Light" Margin="0,0,5,0"/>
