@@ -16,7 +16,7 @@ namespace Meeting_Scheduler_App.ViewModel
 {
     public class VM : ObservableObject
     {
-        #region filter bindings
+        #region filter bindingssldkad
 
         private bool _checkFlipchart;
 
