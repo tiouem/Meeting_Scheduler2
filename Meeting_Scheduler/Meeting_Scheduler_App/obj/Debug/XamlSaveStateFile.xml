@@ -1,0 +1,9 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\t\documents\visual studio 2013\projects\meeting_scheduler\meeting_scheduler_app\obj\debug\intermediatexaml\meeting_scheduler_app.exe" HashGuid="0ffefc5c-fa69-dfb4-4610-43ddb80bb9c0" />
+    <ReferenceAssembly PathName="c:\users\t\documents\visual studio 2013\projects\meeting_scheduler\packages\newtonsoft.json.6.0.8\lib\netcore45\newtonsoft.json.dll" HashGuid="fd3dfcab-cf69-c796-78a2-2423dadb814b" />
+    <ReferenceAssembly PathName="c:\users\t\documents\visual studio 2013\projects\meeting_scheduler\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.extensions.dll" HashGuid="b50282f8-b9f8-4408-8d49-ba2efe301624" />
+    <ReferenceAssembly PathName="c:\users\t\documents\visual studio 2013\projects\meeting_scheduler\packages\microsoft.aspnet.webapi.client.5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\system.net.http.formatting.dll" HashGuid="2be584ba-1a95-71f0-a34d-ef121720ead4" />
+    <ReferenceAssembly PathName="c:\users\t\documents\visual studio 2013\projects\meeting_scheduler\packages\microsoft.net.http.2.2.29\lib\win8\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>
