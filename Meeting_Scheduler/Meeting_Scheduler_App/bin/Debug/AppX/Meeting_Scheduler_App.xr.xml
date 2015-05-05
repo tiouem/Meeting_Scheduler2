@@ -32,11 +32,11 @@
     <RootPropertyPathName Name="StartTime" />
     <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Description" />
-    <RootPropertyPathName Name="Rooms" />
+    <RootPropertyPathName Name="V_Rooms" />
     <RootPropertyPathName Name="Blocks" />
     <RootPropertyPathName Name="BlockWidth" />
     <RootPropertyPathName Name="Color" />
-    <RootPropertyPathName Name="Header" />
+    <RootPropertyPathName Name="V_Header" />
     <RootPropertyPathName Name="TickWidth" />
     <RootPropertyPathName Name="StrTick" />
   </Roots.PropertyPathNames>
@@ -146,7 +146,7 @@
       <RootMethod Name="SetItemType" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
-    <RootType FullName="Meeting_Scheduler_App.CreateRoom" />
+    <RootType FullName="Meeting_Scheduler_App.View.CreateRoom" />
     <RootType FullName="Meeting_Scheduler_App.ImageConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
@@ -166,7 +166,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
     </RootType>
-    <RootType FullName="Meeting_Scheduler_App.MainPage" />
+    <RootType FullName="Meeting_Scheduler_App.View.RoomDetail" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
@@ -203,7 +203,7 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Foreground" />
     </RootType>
-    <RootType FullName="MSchedule.View.AddMeeting" />
+    <RootType FullName="Meeting_Scheduler_App.View.AddMeeting" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
@@ -224,6 +224,6 @@
     <RootType FullName="Windows.UI.Xaml.Media.PlaneProjection">
       <RootProperty Name="RotationY" />
     </RootType>
-    <RootType FullName="MSchedule.View.Schedule" />
+    <RootType FullName="Meeting_Scheduler_App.View.Schedule" />
   </Roots.RootTypes>
 </Roots>

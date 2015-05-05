@@ -230,21 +230,11 @@ namespace Meeting_Scheduler_App.ViewModel
             RoomTypeList.Add("Classroom");
 
             newRoom = new Room();
-            SelectedRoom2 = new Room()
-            {
-                Type = "Conferention room",
-                Room_Id = 0,
-                Capacity = 20,
-                Camera = false,
-                FlipChart = false,
-                Phone = true,
-                Projector = false,
-                Image =
-                    "C:\\Users\\T\\AppData\\Local\\Packages\\3d7ea83a-e5ae-4681-b00c-d8428d933b2e_1tkvwat7n69a8\\LocalState\\projector.png"
-
-            };
+            SelectedRoom2 = new Room();
+           
             CreateRoomCommand = new RelayCommand(CreateRoom);
             PickFileCommand = new RelayCommand(PickFile);
+            GetRoomCommand = new RelayCommand(GetRoom);
         }
 
         public static Room SelectedRoom2 { get; set; }
@@ -278,7 +268,7 @@ namespace Meeting_Scheduler_App.ViewModel
             else
             {
                 MessageDialog mg = new MessageDialog("File not choosed");
-                mg.ShowAsync();
+                await  mg.ShowAsync();
             }
         }
 
@@ -351,8 +341,30 @@ namespace Meeting_Scheduler_App.ViewModel
                 md.ShowAsync();
             }
             return null;
-        } 
+        }
+        public ICommand GetRoomCommand { get; set; }
+        public Room GetRoom()
+        {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://localhost:9786/");
 
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json"));
+            string path = "api/Rooms/" + SelectedRoom.Room_Id;
+            HttpResponseMessage response = client.GetAsync(path).Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                var room = response.Content.ReadAsAsync<Room>().Result;
+                return room;
+            }
+            else
+            {
+                MessageDialog md = new MessageDialog("Room not found");
+                md.ShowAsync();
+            }
+            return null;
+        }
 
     }
 }

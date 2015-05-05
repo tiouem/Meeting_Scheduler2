@@ -16,12 +16,12 @@ using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
-namespace Meeting_Scheduler_App
+namespace Meeting_Scheduler_App.View
 {
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class RoomDetail : Page
     {
 
         private NavigationHelper navigationHelper;
@@ -45,13 +45,15 @@ namespace Meeting_Scheduler_App
         }
 
 
-        public MainPage()
+        public RoomDetail()
         {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
         }
+
+       
 
         /// <summary>
         /// Populates the page with content passed during navigation. Any saved state is also

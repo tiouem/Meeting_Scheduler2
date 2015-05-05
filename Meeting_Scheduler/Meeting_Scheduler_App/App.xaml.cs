@@ -1,20 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
+using System.Diagnostics;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+using Windows.Globalization;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using MSchedule.View;
+using Meeting_Scheduler_App.View;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -44,7 +36,7 @@ namespace Meeting_Scheduler_App
         {
 
 #if DEBUG
-            if (System.Diagnostics.Debugger.IsAttached)
+            if (Debugger.IsAttached)
             {
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
@@ -59,7 +51,7 @@ namespace Meeting_Scheduler_App
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
                 // Set the default language
-                rootFrame.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
+                rootFrame.Language = ApplicationLanguages.Languages[0];
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
@@ -77,7 +69,7 @@ namespace Meeting_Scheduler_App
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(Schedule), e.Arguments);
+                rootFrame.Navigate(typeof(RoomDetail), e.Arguments);
             }
             // Ensure the current window is active
             Window.Current.Activate();

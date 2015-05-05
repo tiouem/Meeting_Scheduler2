@@ -7,86 +7,86 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>3d7ea83a-e5ae-4681-b00c-d8428d933b2e</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\Meeting_Scheduler_App.exe">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\Meeting_Scheduler_App.exe">
       <PackagePath>Meeting_Scheduler_App.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\packages\Newtonsoft.Json.6.0.8\lib\netcore45\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\packages\Newtonsoft.Json.6.0.8\lib\netcore45\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\System.Net.Http.Formatting.dll">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\System.Net.Http.Formatting.dll">
       <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\camera.png">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\camera.png">
       <PackagePath>Assets\camera.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\cancel.png">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\cancel.png">
       <PackagePath>Assets\cancel.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\check.png">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\check.png">
       <PackagePath>Assets\check.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\flipchart.png">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\flipchart.png">
       <PackagePath>Assets\flipchart.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\phone.png">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\phone.png">
       <PackagePath>Assets\phone.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\projector.png">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\projector.png">
       <PackagePath>Assets\projector.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\Assets\conferenceroom1.jpg">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\Assets\conferenceroom1.jpg">
       <PackagePath>Assets\conferenceroom1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\CreateRoom.xbf">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\CreateRoom.xbf">
       <PackagePath>View\CreateRoom.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\RoomDetail.xbf">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\RoomDetail.xbf">
       <PackagePath>View\RoomDetail.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\AddMeeting.xbf">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\AddMeeting.xbf">
       <PackagePath>View\AddMeeting.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\Schedule.xbf">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\Schedule.xbf">
       <PackagePath>View\Schedule.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\Meeting_Scheduler_App.xr.xml">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\Meeting_Scheduler_App.xr.xml">
       <PackagePath>Meeting_Scheduler_App.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\T\documents\visual studio 2013\Projects\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
