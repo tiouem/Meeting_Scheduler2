@@ -246,7 +246,16 @@ namespace Meeting_Scheduler_App.ViewModel
             CreateRoomCommand = new RelayCommand(CreateRoom);
             PickFileCommand = new RelayCommand(PickFile);
         }
-
+//adpkqwdl
+//adpkqwdl
+//adpkqwdl
+//adpkqwdl
+//adpkqwdl
+//adpkqwdl
+//adpkqwdl
+//adpkqwdl
+//adpkqwdl
+//adpkqwdl
         public static Room SelectedRoom2 { get; set; }
 
         private Room newRoom;
