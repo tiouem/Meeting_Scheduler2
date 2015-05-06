@@ -1,4 +1,5 @@
 using System;
+using Meeting_Scheduler.EF;
 
 namespace Meeting_Scheduler_App.Model
 {

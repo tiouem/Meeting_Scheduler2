@@ -10,6 +10,7 @@ using Windows.UI.Popups;
 using Meeting_Scheduler_App.Common;
 using Meeting_Scheduler_App.Model;
 using System.Net.Http;
+using Meeting_Scheduler.EF;
 
 
 namespace Meeting_Scheduler_App.ViewModel
@@ -231,12 +232,20 @@ namespace Meeting_Scheduler_App.ViewModel
 
             newRoom = new Room();
             SelectedRoom2 = new Room();
-           
+            Rooms = new ObservableCollection<Room>();
+            GetRooms();
             CreateRoomCommand = new RelayCommand(CreateRoom);
             PickFileCommand = new RelayCommand(PickFile);
-            GetRoomCommand = new RelayCommand(GetRoom);
+//            GetRoomCommand = new RelayCommand(GetRoom);
         }
+        private ObservableCollection<Room> rooms;
 
+        public ObservableCollection<Room> Rooms
+        {
+            get { return rooms; }
+            set { rooms = value; }
+        }
+        
         public static Room SelectedRoom2 { get; set; }
 
         private Room newRoom;
@@ -296,7 +305,7 @@ namespace Meeting_Scheduler_App.ViewModel
             }
         }
 
-        public IQueryable<Room> GetRooms()
+        public void GetRooms()
         {
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("http://localhost:9786/");
@@ -308,16 +317,19 @@ namespace Meeting_Scheduler_App.ViewModel
 
             if (response.IsSuccessStatusCode)
             {
-                var rooms = response.Content.ReadAsAsync<IQueryable<Room>>().Result;
-                return rooms;
+                var rooms = response.Content.ReadAsAsync<IEnumerable<Room>>().Result;
+                Rooms.Clear();
+                Rooms = new ObservableCollection<Room>(rooms);
+                //foreach (Room r in rooms)
+                //{
+                //    Rooms.Add(r);
+                //}
             }
             else
             {
                 MessageDialog md = new MessageDialog("Not");
                 md.ShowAsync();
-            }
-            return null;
-
+            }       
         }
 
         public IQueryable<Meeting> GeMeetings()

@@ -124,13 +124,13 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[32];
+            _typeNameTable = new string[39];
             _typeNameTable[0] = "Meeting_Scheduler_App.ViewModel.VM";
             _typeNameTable[1] = "Meeting_Scheduler_App.Common.ObservableObject";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "Boolean";
             _typeNameTable[4] = "String";
-            _typeNameTable[5] = "Meeting_Scheduler_App.Model.Room";
+            _typeNameTable[5] = "Meeting_Scheduler.EF.Room";
             _typeNameTable[6] = "System.DateTimeOffset";
             _typeNameTable[7] = "System.ValueType";
             _typeNameTable[8] = "System.Windows.Input.ICommand";
@@ -145,26 +145,33 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
             _typeNameTable[17] = "System.Collections.ObjectModel.Collection`1<Meeting_Scheduler_App.Model.V_ScheduleBlock>";
             _typeNameTable[18] = "Meeting_Scheduler_App.Model.V_ScheduleBlock";
             _typeNameTable[19] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[20] = "System.Collections.Generic.List`1<Meeting_Scheduler_App.Model.Room>";
-            _typeNameTable[21] = "System.Collections.Generic.List`1<String>";
-            _typeNameTable[22] = "Meeting_Scheduler_App.View.CreateRoom";
-            _typeNameTable[23] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[24] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[25] = "Meeting_Scheduler_App.Common.ObservableDictionary";
-            _typeNameTable[26] = "Meeting_Scheduler_App.Common.NavigationHelper";
-            _typeNameTable[27] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[28] = "Meeting_Scheduler_App.ImageConverter";
-            _typeNameTable[29] = "Meeting_Scheduler_App.View.RoomDetail";
-            _typeNameTable[30] = "Meeting_Scheduler_App.View.AddMeeting";
-            _typeNameTable[31] = "Meeting_Scheduler_App.View.Schedule";
+            _typeNameTable[20] = "System.Collections.Generic.List`1<Meeting_Scheduler.EF.Room>";
+            _typeNameTable[21] = "System.Nullable`1<Int32>";
+            _typeNameTable[22] = "System.Nullable`1<Boolean>";
+            _typeNameTable[23] = "System.Collections.Generic.ICollection`1<Meeting_Scheduler_App.Model.Meeting>";
+            _typeNameTable[24] = "Meeting_Scheduler_App.Model.Meeting";
+            _typeNameTable[25] = "System.Nullable`1<System.DateTime>";
+            _typeNameTable[26] = "System.Collections.ObjectModel.ObservableCollection`1<Meeting_Scheduler.EF.Room>";
+            _typeNameTable[27] = "System.Collections.ObjectModel.Collection`1<Meeting_Scheduler.EF.Room>";
+            _typeNameTable[28] = "System.Collections.Generic.List`1<String>";
+            _typeNameTable[29] = "Meeting_Scheduler_App.View.CreateRoom";
+            _typeNameTable[30] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[31] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[32] = "Meeting_Scheduler_App.Common.ObservableDictionary";
+            _typeNameTable[33] = "Meeting_Scheduler_App.Common.NavigationHelper";
+            _typeNameTable[34] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[35] = "Meeting_Scheduler_App.ImageConverter";
+            _typeNameTable[36] = "Meeting_Scheduler_App.View.RoomDetail";
+            _typeNameTable[37] = "Meeting_Scheduler_App.View.AddMeeting";
+            _typeNameTable[38] = "Meeting_Scheduler_App.View.Schedule";
 
-            _typeTable = new global::System.Type[32];
+            _typeTable = new global::System.Type[39];
             _typeTable[0] = typeof(global::Meeting_Scheduler_App.ViewModel.VM);
             _typeTable[1] = typeof(global::Meeting_Scheduler_App.Common.ObservableObject);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Boolean);
             _typeTable[4] = typeof(global::System.String);
-            _typeTable[5] = typeof(global::Meeting_Scheduler_App.Model.Room);
+            _typeTable[5] = typeof(global::Meeting_Scheduler.EF.Room);
             _typeTable[6] = typeof(global::System.DateTimeOffset);
             _typeTable[7] = typeof(global::System.ValueType);
             _typeTable[8] = typeof(global::System.Windows.Input.ICommand);
@@ -179,18 +186,25 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
             _typeTable[17] = typeof(global::System.Collections.ObjectModel.Collection<global::Meeting_Scheduler_App.Model.V_ScheduleBlock>);
             _typeTable[18] = typeof(global::Meeting_Scheduler_App.Model.V_ScheduleBlock);
             _typeTable[19] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[20] = typeof(global::System.Collections.Generic.List<global::Meeting_Scheduler_App.Model.Room>);
-            _typeTable[21] = typeof(global::System.Collections.Generic.List<global::System.String>);
-            _typeTable[22] = typeof(global::Meeting_Scheduler_App.View.CreateRoom);
-            _typeTable[23] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[24] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[25] = typeof(global::Meeting_Scheduler_App.Common.ObservableDictionary);
-            _typeTable[26] = typeof(global::Meeting_Scheduler_App.Common.NavigationHelper);
-            _typeTable[27] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[28] = typeof(global::Meeting_Scheduler_App.ImageConverter);
-            _typeTable[29] = typeof(global::Meeting_Scheduler_App.View.RoomDetail);
-            _typeTable[30] = typeof(global::Meeting_Scheduler_App.View.AddMeeting);
-            _typeTable[31] = typeof(global::Meeting_Scheduler_App.View.Schedule);
+            _typeTable[20] = typeof(global::System.Collections.Generic.List<global::Meeting_Scheduler.EF.Room>);
+            _typeTable[21] = typeof(global::System.Nullable<global::System.Int32>);
+            _typeTable[22] = typeof(global::System.Nullable<global::System.Boolean>);
+            _typeTable[23] = typeof(global::System.Collections.Generic.ICollection<global::Meeting_Scheduler_App.Model.Meeting>);
+            _typeTable[24] = typeof(global::Meeting_Scheduler_App.Model.Meeting);
+            _typeTable[25] = typeof(global::System.Nullable<global::System.DateTime>);
+            _typeTable[26] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Meeting_Scheduler.EF.Room>);
+            _typeTable[27] = typeof(global::System.Collections.ObjectModel.Collection<global::Meeting_Scheduler.EF.Room>);
+            _typeTable[28] = typeof(global::System.Collections.Generic.List<global::System.String>);
+            _typeTable[29] = typeof(global::Meeting_Scheduler_App.View.CreateRoom);
+            _typeTable[30] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[31] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[32] = typeof(global::Meeting_Scheduler_App.Common.ObservableDictionary);
+            _typeTable[33] = typeof(global::Meeting_Scheduler_App.Common.NavigationHelper);
+            _typeTable[34] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[35] = typeof(global::Meeting_Scheduler_App.ImageConverter);
+            _typeTable[36] = typeof(global::Meeting_Scheduler_App.View.RoomDetail);
+            _typeTable[37] = typeof(global::Meeting_Scheduler_App.View.AddMeeting);
+            _typeTable[38] = typeof(global::Meeting_Scheduler_App.View.Schedule);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -227,7 +241,7 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
 
         private object Activate_0_VM() { return new global::Meeting_Scheduler_App.ViewModel.VM(); }
         private object Activate_1_ObservableObject() { return new global::Meeting_Scheduler_App.Common.ObservableObject(); }
-        private object Activate_5_Room() { return new global::Meeting_Scheduler_App.Model.Room(); }
+        private object Activate_5_Room() { return new global::Meeting_Scheduler.EF.Room(); }
         private object Activate_9_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Meeting_Scheduler_App.Model.V_Tick>(); }
         private object Activate_10_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Meeting_Scheduler_App.Model.V_Tick>(); }
         private object Activate_11_V_Tick() { return new global::Meeting_Scheduler_App.Model.V_Tick(); }
@@ -237,14 +251,17 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
         private object Activate_16_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Meeting_Scheduler_App.Model.V_ScheduleBlock>(); }
         private object Activate_17_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Meeting_Scheduler_App.Model.V_ScheduleBlock>(); }
         private object Activate_18_V_ScheduleBlock() { return new global::Meeting_Scheduler_App.Model.V_ScheduleBlock(); }
-        private object Activate_20_List() { return new global::System.Collections.Generic.List<global::Meeting_Scheduler_App.Model.Room>(); }
-        private object Activate_21_List() { return new global::System.Collections.Generic.List<global::System.String>(); }
-        private object Activate_22_CreateRoom() { return new global::Meeting_Scheduler_App.View.CreateRoom(); }
-        private object Activate_25_ObservableDictionary() { return new global::Meeting_Scheduler_App.Common.ObservableDictionary(); }
-        private object Activate_28_ImageConverter() { return new global::Meeting_Scheduler_App.ImageConverter(); }
-        private object Activate_29_RoomDetail() { return new global::Meeting_Scheduler_App.View.RoomDetail(); }
-        private object Activate_30_AddMeeting() { return new global::Meeting_Scheduler_App.View.AddMeeting(); }
-        private object Activate_31_Schedule() { return new global::Meeting_Scheduler_App.View.Schedule(); }
+        private object Activate_20_List() { return new global::System.Collections.Generic.List<global::Meeting_Scheduler.EF.Room>(); }
+        private object Activate_24_Meeting() { return new global::Meeting_Scheduler_App.Model.Meeting(); }
+        private object Activate_26_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Meeting_Scheduler.EF.Room>(); }
+        private object Activate_27_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Meeting_Scheduler.EF.Room>(); }
+        private object Activate_28_List() { return new global::System.Collections.Generic.List<global::System.String>(); }
+        private object Activate_29_CreateRoom() { return new global::Meeting_Scheduler_App.View.CreateRoom(); }
+        private object Activate_32_ObservableDictionary() { return new global::Meeting_Scheduler_App.Common.ObservableDictionary(); }
+        private object Activate_35_ImageConverter() { return new global::Meeting_Scheduler_App.ImageConverter(); }
+        private object Activate_36_RoomDetail() { return new global::Meeting_Scheduler_App.View.RoomDetail(); }
+        private object Activate_37_AddMeeting() { return new global::Meeting_Scheduler_App.View.AddMeeting(); }
+        private object Activate_38_Schedule() { return new global::Meeting_Scheduler_App.View.Schedule(); }
         private void VectorAdd_9_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Meeting_Scheduler_App.Model.V_Tick>)instance;
@@ -283,17 +300,35 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
         }
         private void VectorAdd_20_List(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::Meeting_Scheduler_App.Model.Room>)instance;
-            var newItem = (global::Meeting_Scheduler_App.Model.Room)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::Meeting_Scheduler.EF.Room>)instance;
+            var newItem = (global::Meeting_Scheduler.EF.Room)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_21_List(object instance, object item)
+        private void VectorAdd_23_ICollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Meeting_Scheduler_App.Model.Meeting>)instance;
+            var newItem = (global::Meeting_Scheduler_App.Model.Meeting)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_26_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Meeting_Scheduler.EF.Room>)instance;
+            var newItem = (global::Meeting_Scheduler.EF.Room)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_27_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Meeting_Scheduler.EF.Room>)instance;
+            var newItem = (global::Meeting_Scheduler.EF.Room)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_28_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
             var newItem = (global::System.String)item;
             collection.Add(newItem);
         }
-        private void MapAdd_25_ObservableDictionary(object instance, object key, object item)
+        private void MapAdd_32_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
@@ -330,10 +365,12 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
                 userType.AddMemberName("V_Header");
                 userType.AddMemberName("V_Rooms");
                 userType.AddMemberName("FilteredRooms");
+                userType.AddMemberName("Rooms");
                 userType.AddMemberName("RoomTypeList");
                 userType.AddMemberName("NewRoom");
                 userType.AddMemberName("PickFileCommand");
                 userType.AddMemberName("CreateRoomCommand");
+                userType.AddMemberName("GetRoomCommand");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -357,7 +394,7 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
                 xamlType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  Meeting_Scheduler_App.Model.Room
+            case 5:   //  Meeting_Scheduler.EF.Room
                 userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_5_Room;
                 userType.AddMemberName("Room_Id");
@@ -368,6 +405,7 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
                 userType.AddMemberName("Phone");
                 userType.AddMemberName("Camera");
                 userType.AddMemberName("Image");
+                userType.AddMemberName("Meetings");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -467,84 +505,137 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
                 xamlType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 20:   //  System.Collections.Generic.List`1<Meeting_Scheduler_App.Model.Room>
+            case 20:   //  System.Collections.Generic.List`1<Meeting_Scheduler.EF.Room>
                 userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.CollectionAdd = VectorAdd_20_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 21:   //  System.Collections.Generic.List`1<String>
-                userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_21_List;
+            case 21:   //  System.Nullable`1<Int32>
+                userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 22:   //  Meeting_Scheduler_App.View.CreateRoom
+            case 22:   //  System.Nullable`1<Boolean>
+                userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 23:   //  System.Collections.Generic.ICollection`1<Meeting_Scheduler_App.Model.Meeting>
+                userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_23_ICollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 24:   //  Meeting_Scheduler_App.Model.Meeting
+                userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_24_Meeting;
+                userType.AddMemberName("Meeting_Id");
+                userType.AddMemberName("Name");
+                userType.AddMemberName("Description");
+                userType.AddMemberName("Room_Id");
+                userType.AddMemberName("Date");
+                userType.AddMemberName("Duration");
+                userType.AddMemberName("Room");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 25:   //  System.Nullable`1<System.DateTime>
+                userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 26:   //  System.Collections.ObjectModel.ObservableCollection`1<Meeting_Scheduler.EF.Room>
+                userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Meeting_Scheduler.EF.Room>"));
+                userType.CollectionAdd = VectorAdd_26_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 27:   //  System.Collections.ObjectModel.Collection`1<Meeting_Scheduler.EF.Room>
+                userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_27_Collection;
+                userType.CollectionAdd = VectorAdd_27_Collection;
+                xamlType = userType;
+                break;
+
+            case 28:   //  System.Collections.Generic.List`1<String>
+                userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_28_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 29:   //  Meeting_Scheduler_App.View.CreateRoom
                 userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_CreateRoom;
+                userType.Activator = Activate_29_CreateRoom;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  Windows.UI.Xaml.Controls.Page
+            case 30:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  Windows.UI.Xaml.Controls.UserControl
+            case 31:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 25:   //  Meeting_Scheduler_App.Common.ObservableDictionary
+            case 32:   //  Meeting_Scheduler_App.Common.ObservableDictionary
                 userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_25_ObservableDictionary;
+                userType.DictionaryAdd = MapAdd_32_ObservableDictionary;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  Meeting_Scheduler_App.Common.NavigationHelper
+            case 33:   //  Meeting_Scheduler_App.Common.NavigationHelper
                 userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  Windows.UI.Xaml.DependencyObject
+            case 34:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  Meeting_Scheduler_App.ImageConverter
+            case 35:   //  Meeting_Scheduler_App.ImageConverter
                 userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_28_ImageConverter;
+                userType.Activator = Activate_35_ImageConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 29:   //  Meeting_Scheduler_App.View.RoomDetail
+            case 36:   //  Meeting_Scheduler_App.View.RoomDetail
                 userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_29_RoomDetail;
+                userType.Activator = Activate_36_RoomDetail;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 30:   //  Meeting_Scheduler_App.View.AddMeeting
+            case 37:   //  Meeting_Scheduler_App.View.AddMeeting
                 userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_30_AddMeeting;
+                userType.Activator = Activate_37_AddMeeting;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 31:   //  Meeting_Scheduler_App.View.Schedule
+            case 38:   //  Meeting_Scheduler_App.View.Schedule
                 userType = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_31_Schedule;
+                userType.Activator = Activate_38_Schedule;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
@@ -613,7 +704,7 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
         private void set_5_VM_SelectedRoom(object instance, object Value)
         {
             var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
-            that.SelectedRoom = (global::Meeting_Scheduler_App.Model.Room)Value;
+            that.SelectedRoom = (global::Meeting_Scheduler.EF.Room)Value;
         }
         private object get_6_VM_Description(object instance)
         {
@@ -772,160 +863,260 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
         }
         private object get_23_Room_Room_Id(object instance)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             return that.Room_Id;
         }
         private void set_23_Room_Room_Id(object instance, object Value)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             that.Room_Id = (global::System.Int32)Value;
         }
         private object get_24_Room_Type(object instance)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             return that.Type;
         }
         private void set_24_Room_Type(object instance, object Value)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             that.Type = (global::System.String)Value;
         }
         private object get_25_Room_Capacity(object instance)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             return that.Capacity;
         }
         private void set_25_Room_Capacity(object instance, object Value)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
-            that.Capacity = (global::System.Int32)Value;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
+            that.Capacity = (global::System.Nullable<global::System.Int32>)Value;
         }
         private object get_26_Room_Projector(object instance)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             return that.Projector;
         }
         private void set_26_Room_Projector(object instance, object Value)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
-            that.Projector = (global::System.Boolean)Value;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
+            that.Projector = (global::System.Nullable<global::System.Boolean>)Value;
         }
         private object get_27_Room_FlipChart(object instance)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             return that.FlipChart;
         }
         private void set_27_Room_FlipChart(object instance, object Value)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
-            that.FlipChart = (global::System.Boolean)Value;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
+            that.FlipChart = (global::System.Nullable<global::System.Boolean>)Value;
         }
         private object get_28_Room_Phone(object instance)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             return that.Phone;
         }
         private void set_28_Room_Phone(object instance, object Value)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
-            that.Phone = (global::System.Boolean)Value;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
+            that.Phone = (global::System.Nullable<global::System.Boolean>)Value;
         }
         private object get_29_Room_Camera(object instance)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             return that.Camera;
         }
         private void set_29_Room_Camera(object instance, object Value)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
-            that.Camera = (global::System.Boolean)Value;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
+            that.Camera = (global::System.Nullable<global::System.Boolean>)Value;
         }
         private object get_30_Room_Image(object instance)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             return that.Image;
         }
         private void set_30_Room_Image(object instance, object Value)
         {
-            var that = (global::Meeting_Scheduler_App.Model.Room)instance;
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
             that.Image = (global::System.String)Value;
         }
-        private object get_31_VM_RoomTypeList(object instance)
+        private object get_31_Room_Meetings(object instance)
+        {
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
+            return that.Meetings;
+        }
+        private void set_31_Room_Meetings(object instance, object Value)
+        {
+            var that = (global::Meeting_Scheduler.EF.Room)instance;
+            that.Meetings = (global::System.Collections.Generic.ICollection<global::Meeting_Scheduler_App.Model.Meeting>)Value;
+        }
+        private object get_32_Meeting_Meeting_Id(object instance)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            return that.Meeting_Id;
+        }
+        private void set_32_Meeting_Meeting_Id(object instance, object Value)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            that.Meeting_Id = (global::System.Int32)Value;
+        }
+        private object get_33_Meeting_Name(object instance)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            return that.Name;
+        }
+        private void set_33_Meeting_Name(object instance, object Value)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            that.Name = (global::System.String)Value;
+        }
+        private object get_34_Meeting_Description(object instance)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            return that.Description;
+        }
+        private void set_34_Meeting_Description(object instance, object Value)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            that.Description = (global::System.String)Value;
+        }
+        private object get_35_Meeting_Room_Id(object instance)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            return that.Room_Id;
+        }
+        private void set_35_Meeting_Room_Id(object instance, object Value)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            that.Room_Id = (global::System.Int32)Value;
+        }
+        private object get_36_Meeting_Date(object instance)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            return that.Date;
+        }
+        private void set_36_Meeting_Date(object instance, object Value)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            that.Date = (global::System.Nullable<global::System.DateTime>)Value;
+        }
+        private object get_37_Meeting_Duration(object instance)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            return that.Duration;
+        }
+        private void set_37_Meeting_Duration(object instance, object Value)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            that.Duration = (global::System.Nullable<global::System.Int32>)Value;
+        }
+        private object get_38_Meeting_Room(object instance)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            return that.Room;
+        }
+        private void set_38_Meeting_Room(object instance, object Value)
+        {
+            var that = (global::Meeting_Scheduler_App.Model.Meeting)instance;
+            that.Room = (global::Meeting_Scheduler.EF.Room)Value;
+        }
+        private object get_39_VM_Rooms(object instance)
+        {
+            var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
+            return that.Rooms;
+        }
+        private void set_39_VM_Rooms(object instance, object Value)
+        {
+            var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
+            that.Rooms = (global::System.Collections.ObjectModel.ObservableCollection<global::Meeting_Scheduler.EF.Room>)Value;
+        }
+        private object get_40_VM_RoomTypeList(object instance)
         {
             var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
             return that.RoomTypeList;
         }
-        private void set_31_VM_RoomTypeList(object instance, object Value)
+        private void set_40_VM_RoomTypeList(object instance, object Value)
         {
             var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
             that.RoomTypeList = (global::System.Collections.Generic.List<global::System.String>)Value;
         }
-        private object get_32_VM_NewRoom(object instance)
+        private object get_41_VM_NewRoom(object instance)
         {
             var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
             return that.NewRoom;
         }
-        private void set_32_VM_NewRoom(object instance, object Value)
+        private void set_41_VM_NewRoom(object instance, object Value)
         {
             var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
-            that.NewRoom = (global::Meeting_Scheduler_App.Model.Room)Value;
+            that.NewRoom = (global::Meeting_Scheduler.EF.Room)Value;
         }
-        private object get_33_VM_PickFileCommand(object instance)
+        private object get_42_VM_PickFileCommand(object instance)
         {
             var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
             return that.PickFileCommand;
         }
-        private void set_33_VM_PickFileCommand(object instance, object Value)
+        private void set_42_VM_PickFileCommand(object instance, object Value)
         {
             var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
             that.PickFileCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_34_VM_CreateRoomCommand(object instance)
+        private object get_43_VM_CreateRoomCommand(object instance)
         {
             var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
             return that.CreateRoomCommand;
         }
-        private void set_34_VM_CreateRoomCommand(object instance, object Value)
+        private void set_43_VM_CreateRoomCommand(object instance, object Value)
         {
             var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
             that.CreateRoomCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_35_CreateRoom_DefaultViewModel(object instance)
+        private object get_44_VM_GetRoomCommand(object instance)
+        {
+            var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
+            return that.GetRoomCommand;
+        }
+        private void set_44_VM_GetRoomCommand(object instance, object Value)
+        {
+            var that = (global::Meeting_Scheduler_App.ViewModel.VM)instance;
+            that.GetRoomCommand = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_45_CreateRoom_DefaultViewModel(object instance)
         {
             var that = (global::Meeting_Scheduler_App.View.CreateRoom)instance;
             return that.DefaultViewModel;
         }
-        private object get_36_CreateRoom_NavigationHelper(object instance)
+        private object get_46_CreateRoom_NavigationHelper(object instance)
         {
             var that = (global::Meeting_Scheduler_App.View.CreateRoom)instance;
             return that.NavigationHelper;
         }
-        private object get_37_RoomDetail_DefaultViewModel(object instance)
+        private object get_47_RoomDetail_DefaultViewModel(object instance)
         {
             var that = (global::Meeting_Scheduler_App.View.RoomDetail)instance;
             return that.DefaultViewModel;
         }
-        private object get_38_RoomDetail_NavigationHelper(object instance)
+        private object get_48_RoomDetail_NavigationHelper(object instance)
         {
             var that = (global::Meeting_Scheduler_App.View.RoomDetail)instance;
             return that.NavigationHelper;
         }
-        private object get_39_AddMeeting_DefaultViewModel(object instance)
+        private object get_49_AddMeeting_DefaultViewModel(object instance)
         {
             var that = (global::Meeting_Scheduler_App.View.AddMeeting)instance;
             return that.DefaultViewModel;
         }
-        private object get_40_AddMeeting_NavigationHelper(object instance)
+        private object get_50_AddMeeting_NavigationHelper(object instance)
         {
             var that = (global::Meeting_Scheduler_App.View.AddMeeting)instance;
             return that.NavigationHelper;
         }
-        private object get_41_Schedule_DefaultViewModel(object instance)
+        private object get_51_Schedule_DefaultViewModel(object instance)
         {
             var that = (global::Meeting_Scheduler_App.View.Schedule)instance;
             return that.DefaultViewModel;
         }
-        private object get_42_Schedule_NavigationHelper(object instance)
+        private object get_52_Schedule_NavigationHelper(object instance)
         {
             var that = (global::Meeting_Scheduler_App.View.Schedule)instance;
             return that.NavigationHelper;
@@ -970,7 +1161,7 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
                 break;
             case "Meeting_Scheduler_App.ViewModel.VM.SelectedRoom":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.ViewModel.VM");
-                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "SelectedRoom", "Meeting_Scheduler_App.Model.Room");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "SelectedRoom", "Meeting_Scheduler.EF.Room");
                 xamlMember.Getter = get_5_VM_SelectedRoom;
                 xamlMember.Setter = set_5_VM_SelectedRoom;
                 break;
@@ -1072,128 +1263,188 @@ namespace Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo
                 break;
             case "Meeting_Scheduler_App.ViewModel.VM.FilteredRooms":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.ViewModel.VM");
-                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "FilteredRooms", "System.Collections.Generic.List`1<Meeting_Scheduler_App.Model.Room>");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "FilteredRooms", "System.Collections.Generic.List`1<Meeting_Scheduler.EF.Room>");
                 xamlMember.Getter = get_22_VM_FilteredRooms;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Meeting_Scheduler_App.Model.Room.Room_Id":
-                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Room");
+            case "Meeting_Scheduler.EF.Room.Room_Id":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler.EF.Room");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Room_Id", "Int32");
                 xamlMember.Getter = get_23_Room_Room_Id;
                 xamlMember.Setter = set_23_Room_Room_Id;
                 break;
-            case "Meeting_Scheduler_App.Model.Room.Type":
-                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Room");
+            case "Meeting_Scheduler.EF.Room.Type":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler.EF.Room");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Type", "String");
                 xamlMember.Getter = get_24_Room_Type;
                 xamlMember.Setter = set_24_Room_Type;
                 break;
-            case "Meeting_Scheduler_App.Model.Room.Capacity":
-                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Room");
-                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Capacity", "Int32");
+            case "Meeting_Scheduler.EF.Room.Capacity":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler.EF.Room");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Capacity", "System.Nullable`1<Int32>");
                 xamlMember.Getter = get_25_Room_Capacity;
                 xamlMember.Setter = set_25_Room_Capacity;
                 break;
-            case "Meeting_Scheduler_App.Model.Room.Projector":
-                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Room");
-                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Projector", "Boolean");
+            case "Meeting_Scheduler.EF.Room.Projector":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler.EF.Room");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Projector", "System.Nullable`1<Boolean>");
                 xamlMember.Getter = get_26_Room_Projector;
                 xamlMember.Setter = set_26_Room_Projector;
                 break;
-            case "Meeting_Scheduler_App.Model.Room.FlipChart":
-                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Room");
-                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "FlipChart", "Boolean");
+            case "Meeting_Scheduler.EF.Room.FlipChart":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler.EF.Room");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "FlipChart", "System.Nullable`1<Boolean>");
                 xamlMember.Getter = get_27_Room_FlipChart;
                 xamlMember.Setter = set_27_Room_FlipChart;
                 break;
-            case "Meeting_Scheduler_App.Model.Room.Phone":
-                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Room");
-                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Phone", "Boolean");
+            case "Meeting_Scheduler.EF.Room.Phone":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler.EF.Room");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Phone", "System.Nullable`1<Boolean>");
                 xamlMember.Getter = get_28_Room_Phone;
                 xamlMember.Setter = set_28_Room_Phone;
                 break;
-            case "Meeting_Scheduler_App.Model.Room.Camera":
-                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Room");
-                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Camera", "Boolean");
+            case "Meeting_Scheduler.EF.Room.Camera":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler.EF.Room");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Camera", "System.Nullable`1<Boolean>");
                 xamlMember.Getter = get_29_Room_Camera;
                 xamlMember.Setter = set_29_Room_Camera;
                 break;
-            case "Meeting_Scheduler_App.Model.Room.Image":
-                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Room");
+            case "Meeting_Scheduler.EF.Room.Image":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler.EF.Room");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Image", "String");
                 xamlMember.Getter = get_30_Room_Image;
                 xamlMember.Setter = set_30_Room_Image;
                 break;
+            case "Meeting_Scheduler.EF.Room.Meetings":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler.EF.Room");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Meetings", "System.Collections.Generic.ICollection`1<Meeting_Scheduler_App.Model.Meeting>");
+                xamlMember.Getter = get_31_Room_Meetings;
+                xamlMember.Setter = set_31_Room_Meetings;
+                break;
+            case "Meeting_Scheduler_App.Model.Meeting.Meeting_Id":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Meeting");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Meeting_Id", "Int32");
+                xamlMember.Getter = get_32_Meeting_Meeting_Id;
+                xamlMember.Setter = set_32_Meeting_Meeting_Id;
+                break;
+            case "Meeting_Scheduler_App.Model.Meeting.Name":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Meeting");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_33_Meeting_Name;
+                xamlMember.Setter = set_33_Meeting_Name;
+                break;
+            case "Meeting_Scheduler_App.Model.Meeting.Description":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Meeting");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Description", "String");
+                xamlMember.Getter = get_34_Meeting_Description;
+                xamlMember.Setter = set_34_Meeting_Description;
+                break;
+            case "Meeting_Scheduler_App.Model.Meeting.Room_Id":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Meeting");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Room_Id", "Int32");
+                xamlMember.Getter = get_35_Meeting_Room_Id;
+                xamlMember.Setter = set_35_Meeting_Room_Id;
+                break;
+            case "Meeting_Scheduler_App.Model.Meeting.Date":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Meeting");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Date", "System.Nullable`1<System.DateTime>");
+                xamlMember.Getter = get_36_Meeting_Date;
+                xamlMember.Setter = set_36_Meeting_Date;
+                break;
+            case "Meeting_Scheduler_App.Model.Meeting.Duration":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Meeting");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Duration", "System.Nullable`1<Int32>");
+                xamlMember.Getter = get_37_Meeting_Duration;
+                xamlMember.Setter = set_37_Meeting_Duration;
+                break;
+            case "Meeting_Scheduler_App.Model.Meeting.Room":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.Model.Meeting");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Room", "Meeting_Scheduler.EF.Room");
+                xamlMember.Getter = get_38_Meeting_Room;
+                xamlMember.Setter = set_38_Meeting_Room;
+                break;
+            case "Meeting_Scheduler_App.ViewModel.VM.Rooms":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.ViewModel.VM");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "Rooms", "System.Collections.ObjectModel.ObservableCollection`1<Meeting_Scheduler.EF.Room>");
+                xamlMember.Getter = get_39_VM_Rooms;
+                xamlMember.Setter = set_39_VM_Rooms;
+                break;
             case "Meeting_Scheduler_App.ViewModel.VM.RoomTypeList":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.ViewModel.VM");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "RoomTypeList", "System.Collections.Generic.List`1<String>");
-                xamlMember.Getter = get_31_VM_RoomTypeList;
-                xamlMember.Setter = set_31_VM_RoomTypeList;
+                xamlMember.Getter = get_40_VM_RoomTypeList;
+                xamlMember.Setter = set_40_VM_RoomTypeList;
                 break;
             case "Meeting_Scheduler_App.ViewModel.VM.NewRoom":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.ViewModel.VM");
-                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "NewRoom", "Meeting_Scheduler_App.Model.Room");
-                xamlMember.Getter = get_32_VM_NewRoom;
-                xamlMember.Setter = set_32_VM_NewRoom;
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "NewRoom", "Meeting_Scheduler.EF.Room");
+                xamlMember.Getter = get_41_VM_NewRoom;
+                xamlMember.Setter = set_41_VM_NewRoom;
                 break;
             case "Meeting_Scheduler_App.ViewModel.VM.PickFileCommand":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.ViewModel.VM");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "PickFileCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_33_VM_PickFileCommand;
-                xamlMember.Setter = set_33_VM_PickFileCommand;
+                xamlMember.Getter = get_42_VM_PickFileCommand;
+                xamlMember.Setter = set_42_VM_PickFileCommand;
                 break;
             case "Meeting_Scheduler_App.ViewModel.VM.CreateRoomCommand":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.ViewModel.VM");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "CreateRoomCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_34_VM_CreateRoomCommand;
-                xamlMember.Setter = set_34_VM_CreateRoomCommand;
+                xamlMember.Getter = get_43_VM_CreateRoomCommand;
+                xamlMember.Setter = set_43_VM_CreateRoomCommand;
+                break;
+            case "Meeting_Scheduler_App.ViewModel.VM.GetRoomCommand":
+                userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.ViewModel.VM");
+                xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "GetRoomCommand", "System.Windows.Input.ICommand");
+                xamlMember.Getter = get_44_VM_GetRoomCommand;
+                xamlMember.Setter = set_44_VM_GetRoomCommand;
                 break;
             case "Meeting_Scheduler_App.View.CreateRoom.DefaultViewModel":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.View.CreateRoom");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Meeting_Scheduler_App.Common.ObservableDictionary");
-                xamlMember.Getter = get_35_CreateRoom_DefaultViewModel;
+                xamlMember.Getter = get_45_CreateRoom_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Meeting_Scheduler_App.View.CreateRoom.NavigationHelper":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.View.CreateRoom");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Meeting_Scheduler_App.Common.NavigationHelper");
-                xamlMember.Getter = get_36_CreateRoom_NavigationHelper;
+                xamlMember.Getter = get_46_CreateRoom_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Meeting_Scheduler_App.View.RoomDetail.DefaultViewModel":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.View.RoomDetail");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Meeting_Scheduler_App.Common.ObservableDictionary");
-                xamlMember.Getter = get_37_RoomDetail_DefaultViewModel;
+                xamlMember.Getter = get_47_RoomDetail_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Meeting_Scheduler_App.View.RoomDetail.NavigationHelper":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.View.RoomDetail");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Meeting_Scheduler_App.Common.NavigationHelper");
-                xamlMember.Getter = get_38_RoomDetail_NavigationHelper;
+                xamlMember.Getter = get_48_RoomDetail_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Meeting_Scheduler_App.View.AddMeeting.DefaultViewModel":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.View.AddMeeting");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Meeting_Scheduler_App.Common.ObservableDictionary");
-                xamlMember.Getter = get_39_AddMeeting_DefaultViewModel;
+                xamlMember.Getter = get_49_AddMeeting_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Meeting_Scheduler_App.View.AddMeeting.NavigationHelper":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.View.AddMeeting");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Meeting_Scheduler_App.Common.NavigationHelper");
-                xamlMember.Getter = get_40_AddMeeting_NavigationHelper;
+                xamlMember.Getter = get_50_AddMeeting_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Meeting_Scheduler_App.View.Schedule.DefaultViewModel":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.View.Schedule");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Meeting_Scheduler_App.Common.ObservableDictionary");
-                xamlMember.Getter = get_41_Schedule_DefaultViewModel;
+                xamlMember.Getter = get_51_Schedule_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Meeting_Scheduler_App.View.Schedule.NavigationHelper":
                 userType = (global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Meeting_Scheduler_App.View.Schedule");
                 xamlMember = new global::Meeting_Scheduler_App.Meeting_Scheduler_App_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Meeting_Scheduler_App.Common.NavigationHelper");
-                xamlMember.Getter = get_42_Schedule_NavigationHelper;
+                xamlMember.Getter = get_52_Schedule_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             }

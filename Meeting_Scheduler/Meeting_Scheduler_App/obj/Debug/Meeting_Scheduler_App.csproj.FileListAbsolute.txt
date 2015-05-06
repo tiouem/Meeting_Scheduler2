@@ -127,3 +127,4 @@ C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Schedule
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\qualifiers.txt.intermediate
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\ProjectArchitectures.txt
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\Meeting_Scheduler_App.csprojResolveAssemblyReference.cache

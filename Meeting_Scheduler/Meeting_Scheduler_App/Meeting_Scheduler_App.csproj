@@ -130,6 +130,7 @@
     <Compile Include="Common\ObservableObject.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Model\Room.cs" />
     <Compile Include="ViewModel\VM.cs" />
     <Compile Include="View\CreateRoom.xaml.cs">
       <DependentUpon>CreateRoom.xaml</DependentUpon>
@@ -139,7 +140,6 @@
       <DependentUpon>RoomDetail.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Meeting.cs" />
-    <Compile Include="Model\Room.cs" />
     <Compile Include="Model\V_Room.cs" />
     <Compile Include="Model\V_ScheduleBlock.cs" />
     <Compile Include="Model\V_Tick.cs" />
