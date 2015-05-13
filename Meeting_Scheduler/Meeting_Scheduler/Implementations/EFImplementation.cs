@@ -107,6 +107,11 @@ namespace Meeting_Scheduler.Implementations
            
         }
 
+        public IQueryable<User> GetUsers()
+        {
+         return db.Users;
+        }
+
 
         private bool RoomExists(int id)
         {

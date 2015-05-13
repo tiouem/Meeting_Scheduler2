@@ -22,8 +22,9 @@ namespace Meeting_Scheduler.Interface
         Meeting GetMeeting(int id);
         void DeleteMeeting(Meeting meeting);
         bool AddMeeting(Meeting meeting);
-
         bool ModifyMeeting(int id,Meeting meeting);
+
+        IQueryable<User> GetUsers();
 
     }
 }

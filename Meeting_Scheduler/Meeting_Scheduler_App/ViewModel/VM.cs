@@ -209,9 +209,19 @@ namespace Meeting_Scheduler_App.ViewModel
                         (x.Capacity >= Convert.ToInt32(MinCapacity))));
             }
         }
+        private User loginUser;
 
+        public User LoginUser
+        {
+            get { return loginUser; }
+            set { loginUser = value; }
+        }
+        
+        public static User CurrentUser;
         public VM()
         {
+
+            UserHandler userHandler = new UserHandler();
             _v_Rooms = new ObservableCollection<V_Room>();
             _v_Header = new ObservableCollection<V_Tick>();
             Random rnd = new Random();
@@ -237,6 +247,7 @@ namespace Meeting_Scheduler_App.ViewModel
             CreateRoomCommand = new RelayCommand(CreateRoom);
             PickFileCommand = new RelayCommand(PickFile);
 //            GetRoomCommand = new RelayCommand(GetRoom);
+            userHandler.CheckUserExists(LoginUser, CurrentUser);
         }
         private ObservableCollection<Room> rooms;
 
@@ -378,5 +389,6 @@ namespace Meeting_Scheduler_App.ViewModel
             return null;
         }
 
+        
     }
 }

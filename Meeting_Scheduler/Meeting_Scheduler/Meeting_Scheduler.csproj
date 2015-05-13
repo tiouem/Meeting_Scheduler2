@@ -161,18 +161,20 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MeetingsController.cs" />
     <Compile Include="Controllers\RoomsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="EF\EFModel.cs" />
     <Compile Include="EF\Meeting.cs" />
     <Compile Include="EF\Room.cs" />
+    <Compile Include="EF\User.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Implementations\EFImplementation.cs" />
     <Compile Include="Interface\IfControl.cs" />
-    <Compile Include="Migrations\201504281555111_asd.cs" />
-    <Compile Include="Migrations\201504281555111_asd.Designer.cs">
-      <DependentUpon>201504281555111_asd.cs</DependentUpon>
+    <Compile Include="Migrations\201505110822396_asd.cs" />
+    <Compile Include="Migrations\201505110822396_asd.Designer.cs">
+      <DependentUpon>201505110822396_asd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -236,8 +238,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201504281555111_asd.resx">
-      <DependentUpon>201504281555111_asd.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201505110822396_asd.resx">
+      <DependentUpon>201505110822396_asd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

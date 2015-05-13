@@ -13,7 +13,7 @@ namespace Meeting_Scheduler.EF
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Meeting_Id { get; set; }
 
-        [StringLength(10)]
+        [StringLength(11)]
         public string Name { get; set; }
 
         [StringLength(50)]

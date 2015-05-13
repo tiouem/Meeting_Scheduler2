@@ -74,6 +74,9 @@
     <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\CreateRoom.xbf">
       <PackagePath>View\CreateRoom.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\Login.xbf">
+      <PackagePath>View\Login.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\RoomDetail.xbf">
       <PackagePath>View\RoomDetail.xbf</PackagePath>
     </AppxPackagedFile>

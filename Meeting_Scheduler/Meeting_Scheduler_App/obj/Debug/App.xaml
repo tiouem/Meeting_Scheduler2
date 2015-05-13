@@ -5,7 +5,7 @@
     xmlns:local="using:Meeting_Scheduler_App">
 
     <Application.Resources>
-        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="White" />
+        <!--<SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="White" />-->
         <SolidColorBrush x:Key="DivideLineStrong" Color="#4C000000" />
         <SolidColorBrush x:Key="DivideLineLight" Color="#19000000" />
     </Application.Resources>

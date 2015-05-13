@@ -127,4 +127,16 @@ C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Schedule
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\qualifiers.txt.intermediate
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\ProjectArchitectures.txt
-C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\Meeting_Scheduler_App.csprojResolveAssemblyReference.cache
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\layout.resfiles
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\layout.resfiles.intermediate
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\Resources.resfiles
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\Resources.resfiles.intermediate
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\pri.resfiles
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\pri.resfiles.intermediate
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\priconfig.xml
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\priconfig.xml.intermediate
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\Login.xbf
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\View\Login.g.i.cs
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\View\Login.g.cs
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\View\Login.xaml
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\View\Login.xbf

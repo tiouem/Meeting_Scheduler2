@@ -13,5 +13,6 @@ App.xbf
 Meeting_Scheduler_App.xr.xml
 View\AddMeeting.xbf
 View\CreateRoom.xbf
+View\Login.xbf
 View\RoomDetail.xbf
 View\Schedule.xbf

@@ -17,6 +17,9 @@
     <RootPropertyPathName Name="Room_Id" />
     <RootPropertyPathName Name="NavigationHelper" />
     <RootPropertyPathName Name="GoBackCommand" />
+    <RootPropertyPathName Name="LoginUser" />
+    <RootPropertyPathName Name="Password" />
+    <RootPropertyPathName Name="Username" />
     <RootPropertyPathName Name="SelectedRoom2" />
     <RootPropertyPathName Name="Image" />
     <RootPropertyPathName Name="FilteredRooms" />
@@ -57,6 +60,7 @@
     <RootType FullName="Meeting_Scheduler_App.ViewModel.VM" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
+      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="ChildrenTransitions" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
@@ -66,7 +70,6 @@
       <RootProperty Name="Height" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="RequestedTheme" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -147,16 +150,18 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Meeting_Scheduler_App.View.CreateRoom" />
-    <RootType FullName="Meeting_Scheduler_App.ImageConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Children" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
+    <RootType FullName="Meeting_Scheduler_App.View.Login" />
+    <RootType FullName="Meeting_Scheduler_App.ImageConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
       <RootProperty Name="Stretch" />

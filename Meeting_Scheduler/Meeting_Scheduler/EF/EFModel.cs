@@ -15,6 +15,7 @@ namespace Meeting_Scheduler.EF
 
         public virtual DbSet<Meeting> Meetings { get; set; }
         public virtual DbSet<Room> Rooms { get; set; }
+        public virtual DbSet<User> Users { get; set; } 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

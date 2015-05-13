@@ -68,7 +68,7 @@ C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Schedule
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler\bin\System.Web.WebPages.Deployment.xml
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler\bin\System.Web.WebPages.Razor.xml
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler\bin\Antlr3.Runtime.pdb
-C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler\obj\Debug\Meeting_Scheduler.Migrations.asd.resources
-C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler\obj\Debug\Meeting_Scheduler.csproj.GenerateResource.Cache
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler\obj\Debug\Meeting_Scheduler.dll
 C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler\obj\Debug\Meeting_Scheduler.pdb
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler\obj\Debug\Meeting_Scheduler.Migrations.asd.resources
+C:\Users\T\Documents\GitHub\Meeting_Scheduler\Meeting_Scheduler\Meeting_Scheduler\obj\Debug\Meeting_Scheduler.csproj.GenerateResource.Cache
