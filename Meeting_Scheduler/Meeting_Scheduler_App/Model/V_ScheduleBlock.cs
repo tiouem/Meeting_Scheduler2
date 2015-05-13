@@ -1,32 +1,70 @@
-﻿namespace Meeting_Scheduler_App.Model
+﻿using System.Windows.Input;
+using Meeting_Scheduler_App.Common;
+using Meeting_Scheduler_App.View;
+using MSchedule.View;
+
+namespace Meeting_Scheduler_App.Model
 {
     public class V_ScheduleBlock
     {
-        private Windows.UI.Xaml.Media.Brush _color;
+        public Windows.UI.Xaml.Media.Brush Color { get; set; }
 
-        public Windows.UI.Xaml.Media.Brush Color
+        public bool Booked { get; set; }
+
+        public int BlockWidth { get; set; }
+
+        public string ButtonText
         {
-            get { return _color; }
-            set { _color = value; }
+            get
+            {
+                if (BlockWidth > 40 && Booked)
+                {
+                    return _meeting.Date.Value.ToString("H:mm - ") +
+                           _meeting.Date.Value.AddMinutes((double)_meeting.Duration.Value).ToString("H:mm");
+                }
+                return "";
+            }
         }
 
-        private bool _booked;
-
-        public bool Booked
-        {
-            get { return _booked; }
-            set { _booked = value; }
+        public double ButtonFontSize {
+            get {
+                if ((BlockWidth > 70) && (BlockWidth < 110))
+                {
+                    return 10;
+                }
+                else
+                {
+                    return 15;
+                }
+            }
         }
 
-        private int _blockWidth;
-
-        public int BlockWidth
+        public V_ScheduleBlock(Meeting meeting)
         {
-            get { return _blockWidth; }
-            set { _blockWidth = value; }
+            _meeting = meeting;
         }
-
         
-        
+        private readonly Meeting _meeting;
+
+        public ICommand MeetingClick
+        {
+            get { return new Command(_meetingClick); }
+        }
+
+        private void _meetingClick()
+        {
+            var nav = new NavigationService();
+            var stor = Storage.Instance;
+            stor.SelectedMeeting = _meeting;
+         
+            if (Booked)
+            {
+                nav.Navigate(typeof(MeetingDetail));                
+            }
+            else
+            {
+                nav.Navigate(typeof(AddMeeting));
+            }
+        }
     }
 }

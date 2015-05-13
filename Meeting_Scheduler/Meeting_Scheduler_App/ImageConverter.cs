@@ -13,9 +13,9 @@ namespace Meeting_Scheduler_App
         {
             if (value.Equals(true))
             {
-                return "Assets/check.png";
+                return "../Assets/check.png";
             }
-            return "Assets/cancel.png";
+            return "../Assets/cancel.png";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

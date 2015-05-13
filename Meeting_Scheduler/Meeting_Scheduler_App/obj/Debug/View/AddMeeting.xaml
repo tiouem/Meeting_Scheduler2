@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <Page.DataContext>
-        <viewModel:VM></viewModel:VM>
+        <viewModel:AddMeeting_VM></viewModel:AddMeeting_VM>
     </Page.DataContext>
     <!--
         This grid acts as a root panel for the page that defines two rows:
@@ -36,7 +36,7 @@
             </Grid.ColumnDefinitions>
             <Button Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
                         Style="{StaticResource NavigationBackButtonNormalStyle}" RequestedTheme="Light"/>
-            <TextBlock Text="Add meeting" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+            <TextBlock Text="Meeting Editor" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" RequestedTheme="Light"/>
         </Grid>
         <Grid Grid.Row="1">
@@ -49,12 +49,19 @@
             </Grid.ColumnDefinitions>
             <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="0,30,0,50" ></Border>
             <StackPanel Grid.Column="1">
-                <TextBlock Margin="0,55,0,10" FontFamily="Segoe UI" FontSize="14.667" TextWrapping="Wrap" RequestedTheme="Light">
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <TextBlock Width="150" FontFamily="Segoe UI" FontSize="14.667" RequestedTheme="Light">
+                		<Run Text="Title:"/>
+                		<Run Foreground="#00000000" Text="_" />
+                    </TextBlock>
+                    <TextBox Width="200" RequestedTheme="Light" Margin="0,0,0,5" Text="{Binding NewMeeting.Name, Mode=TwoWay}"/>
+                </StackPanel>
+                <TextBlock Margin="0,5,0,10" FontFamily="Segoe UI" FontSize="14.667" TextWrapping="Wrap" RequestedTheme="Light">
                     <Run>Description:</Run>
                     <!--<Run Foreground="#00000000" >_</Run>
                     <Run>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in euismod justo. In ac dictum dolor. Fusce sit amet justo volutpat, imperdiet lectus vitae, rutrum massa. Pellentesque dapibus, ex quis semper vestibulum, risus erat euismod nisl, nec volutpat mi massa ac lorem.</Run>-->
                 </TextBlock>
-                <TextBox RequestedTheme="Light" MinHeight="200" Margin="0,0,20,0" Text="{Binding Description, Mode=TwoWay}"></TextBox>
+                <TextBox RequestedTheme="Light" MinHeight="200" Margin="0,0,20,0" Text="{Binding NewMeeting.Description, Mode=TwoWay}"></TextBox>
             </StackPanel>
             <StackPanel Grid.Column="1" Margin="0,0,0,30" VerticalAlignment="Bottom">
                 <Grid>
@@ -68,37 +75,32 @@
                         <RowDefinition Height="40"/>
                         <RowDefinition Height="40"/>
                     </Grid.RowDefinitions>
-                    <TextBlock FontFamily="Segoe UI" FontSize="14.667" RequestedTheme="Light">
-                		<Run Text="Room:"/>
-                		<Run Foreground="#00000000" Text="_" />
-                    </TextBlock>
-                    <TextBlock Grid.Column="1" RequestedTheme="Light" Margin="0,0,0,5" Text="{Binding SelectedRoom.Type}"/>
                     <TextBlock Grid.Row="1" FontFamily="Segoe UI" FontSize="14.667"  RequestedTheme="Light">
                 		<Run Text="Date:"/>
                 		<Run Foreground="#00000000" Text="_" />
                     </TextBlock>
-                    <DatePicker Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="14.667"  RequestedTheme="Light" Date="{Binding Date, Mode=TwoWay}" YearVisible="True" Margin="0,0,-120,0" Width="300"/>
+                    <DatePicker Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="14.667"  RequestedTheme="Light" Date="{Binding NewMeeting.Date, Mode=TwoWay}" YearVisible="True" Margin="0,0,-120,0" Width="300"/>
                     <TextBlock Grid.Row="2" FontFamily="Segoe UI" FontSize="14.667"  RequestedTheme="Light">
-                		<Run Text="Timespan:"/>
+                		<Run Text="Start:"/>
                 		<Run Foreground="#00000000" Text="_" />
                     </TextBlock>
                     <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal">
-                        <TextBox  RequestedTheme="Light" Width="98" Margin="0,0,4,5" Text="{Binding StartTime, Mode=TwoWay}"/>
-                        <TextBlock FontFamily="Segoe UI"  Text="-" FontSize="24" RequestedTheme="Light"/>
-                        <TextBox RequestedTheme="Light" Width="80" Margin="5,0,0,5" Text="{Binding EndTime, Mode=TwoWay}"/>
+                        <TimePicker HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ClockIdentifier="24HourClock" RequestedTheme="Light" Time="{Binding StartTime}"/>                        
                     </StackPanel>
-                    <TextBlock Grid.Row="3" FontFamily="Segoe UI" FontSize="14.667" RequestedTheme="Light">
-                		<Run Text="Title:"/>
+                    <TextBlock Grid.Row="3" FontFamily="Segoe UI" FontSize="14.667"  RequestedTheme="Light">
+                		<Run Text="End:"/>
                 		<Run Foreground="#00000000" Text="_" />
                     </TextBlock>
-                    <TextBox Grid.Column="1" Grid.Row="3" RequestedTheme="Light" Margin="0,0,0,5" Text="{Binding Name, Mode=TwoWay}"/>
+                    <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal">
+                        <TimePicker HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ClockIdentifier="24HourClock" RequestedTheme="Light" Time="{Binding EndTime}"/>
+                    </StackPanel>
                 </Grid>
                 <StackPanel Orientation="Horizontal"/>
                 <StackPanel Orientation="Horizontal" Margin="0,5,0,0"/>
                 <StackPanel Orientation="Horizontal" Margin="0,5,0,0"/>
                 <StackPanel Orientation="Horizontal" Margin="0,25,0,0">
                     <Button Content="Create" RequestedTheme="Light" Width="100" Height="50" Command="{Binding AddMeetingClick}"/>
-                    <Button Content="Delete" RequestedTheme="Light" Width="100" Height="50"/>
+                    <Button Content="Delete" RequestedTheme="Light" Width="100" Height="50" Command="{Binding DeleteMeetingClick}"/>
                 </StackPanel>
             </StackPanel>
             <Grid Grid.Column="3">
@@ -126,7 +128,7 @@
 
                     </StackPanel>
 
-                    <ListView ItemsSource="{Binding FilteredRooms}" SelectedItem="{Binding SelectedRoom, Mode=TwoWay}">
+                    <ListView ItemsSource="{Binding FilteredRooms}" SelectedItem="{Binding NewMeeting.Room, Mode=TwoWay}" Margin="0,10,0,0">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">

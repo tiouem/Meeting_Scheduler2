@@ -1,15 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 using Windows.UI;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media;
+using Meeting_Scheduler_App.Common;
+using MSchedule.View;
+using System.Windows.Input;
+using Meeting_Scheduler_App.View;
+using MSchedule.View;
 
 namespace Meeting_Scheduler_App.Model
 {
     public class V_Room
     {
-        private ObservableCollection<V_ScheduleBlock> _blocks;
+        private List<V_ScheduleBlock> _blocks;
 
-        public ObservableCollection<V_ScheduleBlock> Blocks
+        public List<V_ScheduleBlock> Blocks
         {
             get { return _blocks; }
             set { _blocks = value; }
@@ -22,22 +30,25 @@ namespace Meeting_Scheduler_App.Model
             get { return _name; }
             set { _name = value; }
         }
-        
-        public V_Room()
+
+        private Room _room;
+
+        public ICommand RoomClick
         {
-            _blocks = new ObservableCollection<V_ScheduleBlock>();
-            Random rnd = new Random();
-            for (int i = 1; i < 13; i++)
-            {
-                if (rnd.Next(1,3) == 1)
-                {
-                    _blocks.Add(new V_ScheduleBlock(){Booked = true, Color = new SolidColorBrush(Windows.UI.Colors.Crimson), BlockWidth = 100});  
-                }
-                else
-                {
-                    _blocks.Add(new V_ScheduleBlock() { Booked = true, Color = new SolidColorBrush(new Color() { A = 0, R = 0, G = 0, B = 0 }), BlockWidth = 100 });  
-                }
-            }               
+            get { return new Command(_roomClick); }
+        }
+
+        private void _roomClick()
+        {
+            var nav = new NavigationService();
+            var stor = Storage.Instance;
+            stor.SelectedRoom = _room;
+            nav.Navigate(typeof(RoomDetail));
+        }
+
+        public V_Room(Room room)
+        {
+            _room = room;
         }
     }
 }

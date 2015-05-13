@@ -107,13 +107,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\RoomDetail.xaml">
+    <Page Include="View\MeetingDetail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\AddMeeting.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\RoomDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Schedule.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -125,18 +129,27 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\Command.cs" />
+    <Compile Include="Common\Database.cs" />
     <Compile Include="Common\NavigationHelper.cs" />
+    <Compile Include="Common\NavigationService.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\ObservableObject.cs" />
     <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\Storage.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Model\justatetst.cs" />
+    <Compile Include="ViewModel\AddMeeting_VM.cs" />
+    <Compile Include="ViewModel\CreateRoom_VM.cs" />
+    <Compile Include="ViewModel\MeetingDetail_VM.cs" />
+    <Compile Include="ViewModel\RoomDetail_VM.cs" />
+    <Compile Include="ViewModel\Schedule_VM.cs" />
     <Compile Include="ViewModel\VM.cs" />
     <Compile Include="View\CreateRoom.xaml.cs">
       <DependentUpon>CreateRoom.xaml</DependentUpon>
     </Compile>
     <Compile Include="ImageConverter.cs" />
-    <Compile Include="View\RoomDetail.xaml.cs">
-      <DependentUpon>RoomDetail.xaml</DependentUpon>
+    <Compile Include="View\MeetingDetail.xaml.cs">
+      <DependentUpon>MeetingDetail.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Meeting.cs" />
     <Compile Include="Model\Room.cs" />
@@ -146,6 +159,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\AddMeeting.xaml.cs">
       <DependentUpon>AddMeeting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomDetail.xaml.cs">
+      <DependentUpon>RoomDetail.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Schedule.xaml.cs">
       <DependentUpon>Schedule.xaml</DependentUpon>

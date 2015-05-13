@@ -94,31 +94,5 @@ namespace MSchedule.View
 
         #endregion
 
-        private void Border_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            new Windows.UI.Popups.MessageDialog("YOLO").ShowAsync();
-        }
-
-        private void Rectangle_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            //float opct = (sender as Rectangle).Fill.Opacity;
-            //if ((opct == 0) || (opct == 0.4))
-            //{
-            //    if (opct == 0.4)
-            //    {
-            //    }
-            //}
-            //else
-            //{
-                
-            //}
-            //=
-            //0.5;
-        }
-
-        private void Rectangle_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            (sender as Rectangle).Fill.Opacity = 1;
-        }
     }
 }

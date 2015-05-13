@@ -17,28 +17,40 @@
     <RootPropertyPathName Name="Room_Id" />
     <RootPropertyPathName Name="NavigationHelper" />
     <RootPropertyPathName Name="GoBackCommand" />
-    <RootPropertyPathName Name="SelectedRoom2" />
-    <RootPropertyPathName Name="Image" />
+    <RootPropertyPathName Name="Date" />
+    <RootPropertyPathName Name="Meeting" />
+    <RootPropertyPathName Name="Room" />
+    <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="GoBackClick" />
+    <RootPropertyPathName Name="Edit" />
     <RootPropertyPathName Name="FilteredRooms" />
-    <RootPropertyPathName Name="SelectedRoom" />
+    <RootPropertyPathName Name="NewMeeting" />
     <RootPropertyPathName Name="MinCapacity" />
     <RootPropertyPathName Name="CheckCamera" />
     <RootPropertyPathName Name="CheckPhone" />
     <RootPropertyPathName Name="CheckFlipchart" />
     <RootPropertyPathName Name="CheckProjector" />
+    <RootPropertyPathName Name="DeleteMeetingClick" />
     <RootPropertyPathName Name="AddMeetingClick" />
-    <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="EndTime" />
     <RootPropertyPathName Name="StartTime" />
-    <RootPropertyPathName Name="Date" />
-    <RootPropertyPathName Name="Description" />
-    <RootPropertyPathName Name="Rooms" />
+    <RootPropertyPathName Name="SelectedRoom" />
+    <RootPropertyPathName Name="Image" />
+    <RootPropertyPathName Name="VRooms" />
     <RootPropertyPathName Name="Blocks" />
     <RootPropertyPathName Name="BlockWidth" />
+    <RootPropertyPathName Name="ButtonText" />
     <RootPropertyPathName Name="Color" />
-    <RootPropertyPathName Name="Header" />
+    <RootPropertyPathName Name="MeetingClick" />
+    <RootPropertyPathName Name="ButtonFontSize" />
+    <RootPropertyPathName Name="RoomClick" />
+    <RootPropertyPathName Name="VHeader" />
     <RootPropertyPathName Name="TickWidth" />
     <RootPropertyPathName Name="StrTick" />
+    <RootPropertyPathName Name="StringDate" />
+    <RootPropertyPathName Name="NextDayClick" />
+    <RootPropertyPathName Name="PrevDayClick" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -52,6 +64,7 @@
       <RootProperty Name="Resources" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
+      <RootProperty Name="BottomAppBar" />
     </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="Meeting_Scheduler_App.ViewModel.VM" />
@@ -64,7 +77,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
-      <RootProperty Name="DataContext" />
       <RootProperty Name="Margin" />
       <RootProperty Name="RequestedTheme" />
       <RootMethod Name="GetRow" />
@@ -93,20 +105,19 @@
       <RootProperty Name="IsHitTestVisible" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="RequestedTheme" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontWeight" />
       <RootProperty Name="Inlines" />
-      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="RequestedTheme" />
-      <RootProperty Name="Width" />
       <RootProperty Name="MinHeight" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="SelectedValue" />
@@ -130,6 +141,11 @@
       <RootProperty Name="Style" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
       <RootProperty Name="Projection" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
@@ -144,39 +160,42 @@
       <RootMethod Name="SetAutomationId" />
       <RootMethod Name="GetItemType" />
       <RootMethod Name="SetItemType" />
+      <RootMethod Name="GetAccessibilityView" />
+      <RootMethod Name="SetAccessibilityView" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Meeting_Scheduler_App.CreateRoom" />
-    <RootType FullName="Meeting_Scheduler_App.ImageConverter" />
+    <RootType FullName="Meeting_Scheduler_App.ViewModel.MeetingDetail_VM" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="DataContext" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
       <RootProperty Name="Children" />
       <RootProperty Name="Orientation" />
-      <RootProperty Name="VerticalAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Source" />
-      <RootProperty Name="Stretch" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
     </RootType>
-    <RootType FullName="Meeting_Scheduler_App.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBar">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Icon" />
+      <RootProperty Name="Command" />
+    </RootType>
+    <RootType FullName="Meeting_Scheduler_App.View.MeetingDetail" />
+    <RootType FullName="Meeting_Scheduler_App.ViewModel.AddMeeting_VM" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Child" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -199,11 +218,96 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ClockIdentifier" />
+      <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Time" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
       <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="MSchedule.View.AddMeeting" />
+    <RootType FullName="Meeting_Scheduler_App.ImageConverter" />
+    <RootType FullName="Meeting_Scheduler_App.ViewModel.RoomDetail_VM" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Meeting_Scheduler_App.View.RoomDetail" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
+      <RootProperty Name="Duration" />
+      <RootProperty Name="To" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="StrokeDashOffset" />
+      <RootProperty Name="StrokeEndLineCap" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeDashArray" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="ContentTransitions" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Meeting_Scheduler_App.ViewModel.Schedule_VM" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
@@ -211,15 +315,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
-      <RootProperty Name="Stroke" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Fill" />
-      <RootProperty Name="Margin" />
-      <RootEvent Name="PointerEntered" />
-      <RootEvent Name="PointerExited" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.PlaneProjection">
       <RootProperty Name="RotationY" />
