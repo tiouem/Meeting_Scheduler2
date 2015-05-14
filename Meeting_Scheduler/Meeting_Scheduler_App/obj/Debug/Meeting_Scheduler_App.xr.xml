@@ -234,10 +234,10 @@
     <RootType FullName="Meeting_Scheduler_App.ViewModel.RoomDetail_VM" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Stretch" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Meeting_Scheduler_App.View.RoomDetail" />
     <RootType FullName="Windows.UI.Xaml.Controls.Control">

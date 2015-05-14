@@ -23,6 +23,7 @@ namespace Meeting_Scheduler_App.ViewModel
                 StartTime = _newMeeting.Date.Value.TimeOfDay;
                 EndTime = _newMeeting.Date.Value.TimeOfDay.Add(new TimeSpan(0, _newMeeting.Duration.Value, 0));
                 _newMeeting.Room = _rooms.FirstOrDefault(x => x.Room_Id == stor.SelectedMeeting.Room_Id);
+                _date = _newMeeting.Date.Value;
             }
         }
 
@@ -69,7 +70,7 @@ namespace Meeting_Scheduler_App.ViewModel
         }
 
         private bool _checkPhone;
-
+        
         public bool CheckPhone
         {
             get { return _checkPhone; }
@@ -120,6 +121,13 @@ namespace Meeting_Scheduler_App.ViewModel
 
         public TimeSpan EndTime { get; set; }
 
+        public DateTimeOffset Date {
+            get {return  new DateTimeOffset(_date);}
+            set {_date = value.DateTime; }
+        }
+
+        private DateTime _date;
+
         #endregion
 
         #region Commands
@@ -142,6 +150,7 @@ namespace Meeting_Scheduler_App.ViewModel
         private void _addMeetingClick()
         {
             _newMeeting.Duration = (int)EndTime.Subtract(StartTime).TotalMinutes;
+            _newMeeting.Date = _date;
             _newMeeting.Room_Id = _newMeeting.Room.Room_Id;
 
         }

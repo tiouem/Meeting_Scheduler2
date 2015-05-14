@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Windows.Input;
 using Meeting_Scheduler_App.Common;
 using Meeting_Scheduler_App.View;
 using MSchedule.View;
@@ -26,8 +27,10 @@ namespace Meeting_Scheduler_App.Model
             }
         }
 
-        public double ButtonFontSize {
-            get {
+        public double ButtonFontSize
+        {
+            get
+            {
                 if ((BlockWidth > 70) && (BlockWidth < 110))
                 {
                     return 10;
@@ -43,7 +46,7 @@ namespace Meeting_Scheduler_App.Model
         {
             _meeting = meeting;
         }
-        
+
         private readonly Meeting _meeting;
 
         public ICommand MeetingClick
@@ -56,14 +59,17 @@ namespace Meeting_Scheduler_App.Model
             var nav = new NavigationService();
             var stor = Storage.Instance;
             stor.SelectedMeeting = _meeting;
-         
+
             if (Booked)
             {
-                nav.Navigate(typeof(MeetingDetail));                
+                nav.Navigate(typeof(MeetingDetail));
             }
             else
             {
-                nav.Navigate(typeof(AddMeeting));
+                if (!(Storage.Instance.Date.DateTime < DateTime.Today))
+                {
+                    nav.Navigate(typeof(AddMeeting));
+                }
             }
         }
     }

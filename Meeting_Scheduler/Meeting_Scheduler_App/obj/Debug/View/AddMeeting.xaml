@@ -79,7 +79,7 @@
                 		<Run Text="Date:"/>
                 		<Run Foreground="#00000000" Text="_" />
                     </TextBlock>
-                    <DatePicker Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="14.667"  RequestedTheme="Light" Date="{Binding NewMeeting.Date, Mode=TwoWay}" YearVisible="True" Margin="0,0,-120,0" Width="300"/>
+                    <DatePicker Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="14.667"  RequestedTheme="Light" Date="{Binding Date, Mode=TwoWay}" YearVisible="True" Margin="0,0,-120,0" Width="300"/>
                     <TextBlock Grid.Row="2" FontFamily="Segoe UI" FontSize="14.667"  RequestedTheme="Light">
                 		<Run Text="Start:"/>
                 		<Run Foreground="#00000000" Text="_" />
@@ -118,7 +118,7 @@
                         </Grid>
                         <TextBox RequestedTheme="Light" Margin="5,0,0,0" Text="{Binding MinCapacity, Mode=TwoWay}"></TextBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <StackPanel Orientation="Horizontal" Margin="12,10,0,0">
                         <TextBlock  RequestedTheme="Light" Text="Name" FontFamily="Segoe UI" FontSize="14.667" Width="100"></TextBlock>
                         <TextBlock  RequestedTheme="Light" Text="Capacity" FontFamily="Segoe UI" FontSize="14.667" Width="90"></TextBlock>
                         <TextBlock  RequestedTheme="Light" Text="Phone" FontFamily="Segoe UI" FontSize="14.667" Width="70"></TextBlock>
@@ -132,7 +132,7 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock RequestedTheme="Light" Text="{Binding Type}" Width="100"/>
+                                    <TextBlock RequestedTheme="Light" Text="{Binding Type}" Width="100" Margin="10,0,0,0" />
                                     <TextBlock RequestedTheme="Light" Text="{Binding Capacity}" Width="90"/>
                                     <TextBlock RequestedTheme="Light" Text="{Binding Phone}" Width="70"/>
                                     <TextBlock RequestedTheme="Light" Text="{Binding Projector}" Width="80"/>

@@ -133,11 +133,3 @@ C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\View\
 C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\View\RoomDetail.g.cs
 C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\View\RoomDetail.xaml
 C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\View\RoomDetail.xbf
-C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\layout.resfiles
-C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\layout.resfiles.intermediate
-C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\Resources.resfiles
-C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\Resources.resfiles.intermediate
-C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\pri.resfiles
-C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\pri.resfiles.intermediate
-C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\priconfig.xml
-C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\priconfig.xml.intermediate

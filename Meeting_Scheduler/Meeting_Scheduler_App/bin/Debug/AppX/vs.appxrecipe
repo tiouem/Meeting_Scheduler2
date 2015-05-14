@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-05-13T09:37:14.341</Modified>
+      <Modified>2015-05-13T13:58:52.241</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\Meeting_Scheduler_App.exe">
       <PackagePath>Meeting_Scheduler_App.exe</PackagePath>
-      <Modified>2015-05-13T09:49:41.709</Modified>
+      <Modified>2015-05-13T20:34:03.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Downloads\Meeting_Scheduler\packages\Newtonsoft.Json.6.0.8\lib\netcore45\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -106,23 +106,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\AddMeeting.xbf">
       <PackagePath>View\AddMeeting.xbf</PackagePath>
-      <Modified>2015-05-12T22:05:48.076</Modified>
+      <Modified>2015-05-13T20:03:14.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\RoomDetail.xbf">
       <PackagePath>View\RoomDetail.xbf</PackagePath>
-      <Modified>2015-05-13T09:48:31.195</Modified>
+      <Modified>2015-05-13T20:03:14.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\Schedule.xbf">
       <PackagePath>View\Schedule.xbf</PackagePath>
-      <Modified>2015-05-13T09:39:58.606</Modified>
+      <Modified>2015-05-13T20:03:14.322</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\Meeting_Scheduler_App.xr.xml">
       <PackagePath>Meeting_Scheduler_App.xr.xml</PackagePath>
-      <Modified>2015-05-13T09:48:31.151</Modified>
+      <Modified>2015-05-13T20:03:13.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Filip\Downloads\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-05-13T09:49:41.976</Modified>
+      <Modified>2015-05-13T20:08:36.469</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
