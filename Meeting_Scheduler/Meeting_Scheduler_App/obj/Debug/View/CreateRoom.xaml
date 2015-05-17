@@ -15,7 +15,7 @@
         <x:String x:Key="AppName">My Application</x:String>
     </Page.Resources>
     <Page.DataContext>
-        <ViewModel:VM></ViewModel:VM>
+        <ViewModel:CreateRoom_VM></ViewModel:CreateRoom_VM>
     </Page.DataContext>
 
     <!--
@@ -49,44 +49,55 @@
             <TextBlock  Text="Create new room" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <Grid Grid.Row="1" Width="1200" HorizontalAlignment="Center" Height="700">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition/>
-
-            </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="4*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Text="Room_Id" FontSize="25" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="1" Text="Type" FontSize="25" VerticalAlignment="Center" />
-            <TextBlock Grid.Row="2" Text="Capacity" FontSize="25" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="3" Text="Projector" FontSize="25" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="4" Text="Flipchart" FontSize="25" VerticalAlignment="Center" />
-            <TextBlock Grid.Row="5" Text="Phone" FontSize="25" VerticalAlignment="Center" />
-            <TextBlock Grid.Row="6" Text="Camera" FontSize="25" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="7" Text="Image" FontSize="25" VerticalAlignment="Center" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid Column="1" Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Text="Room_Id" FontSize="15" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Name" FontSize="15" VerticalAlignment="Center" />
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Capacity" FontSize="15" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="7" Grid.Column="0" Text="Projector" FontSize="15" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="Flipchart" FontSize="15" VerticalAlignment="Center" />
+                <TextBlock Grid.Row="5" Grid.Column="0" Text="Phone" FontSize="15" VerticalAlignment="Center" />
+                <TextBlock Grid.Row="6" Grid.Column="0" Text="Camera" FontSize="15" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Image" FontSize="15" VerticalAlignment="Center" />
 
 
-
-            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding NewRoom.Room_Id,Mode=TwoWay}" VerticalAlignment="Center" Margin="0,24,0,23"/>
-            <ComboBox Grid.Row="1" Grid.Column="1" SelectedValue="{Binding NewRoom.Type,Mode=TwoWay}" ItemsSource="{Binding RoomTypeList}" VerticalAlignment="Center" Margin="0,23" />
-            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding NewRoom.Capacity,Mode=TwoWay}" VerticalAlignment="Center" Margin="0,24,0,23"/>
-            <ToggleSwitch Grid.Row="3" Grid.Column="1" OnContent="Yes" OffContent="No" IsOn="{Binding NewRoom.Projector,Mode=TwoWay}" Margin="0,13,0,12"/>
-            <ToggleSwitch Grid.Row="4" Grid.Column="1" OnContent="Yes" OffContent="No" IsOn="{Binding NewRoom.FlipChart,Mode=TwoWay}" Margin="0,13"/>
-            <ToggleSwitch Grid.Row="5" Grid.Column="1" OnContent="Yes" OffContent="No" IsOn="{Binding NewRoom.Phone,Mode=TwoWay}"/>
-            <!--<CheckBox Grid.Row="5" Grid.Column="1" IsChecked="{Binding NewRoom.Phone,Mode=TwoWay}" Margin="0,26,0,25"/>-->
-            <ToggleSwitch Grid.Row="6" Grid.Column="1" OnContent="Yes" OffContent="No" IsOn="{Binding NewRoom.Camera,Mode=TwoWay}" Margin="0,13"/>
-            <Button Grid.Row="7" Grid.Column="1" Content="Choose image" Command="{Binding PickFileCommand}"/>
-            <Button Grid.Row="8" Grid.Column="0" Content="Add room" HorizontalAlignment="Center" Width="200" Height="50" Command="{Binding CreateRoomCommand}" Margin="200,14" Grid.RowSpan="2"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding NewRoom.Room_Id,Mode=TwoWay}" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding NewRoom.Type, Mode=TwoWay}" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding NewRoom.Capacity,Mode=TwoWay}" VerticalAlignment="Center"/>
+                <ToggleSwitch Grid.Row="7" Grid.Column="1" OnContent="Yes" OffContent="No" IsOn="{Binding NewRoom.Projector,Mode=TwoWay}"/>
+                <ToggleSwitch Grid.Row="4" Grid.Column="1" OnContent="Yes" OffContent="No" IsOn="{Binding NewRoom.FlipChart,Mode=TwoWay}"/>
+                <ToggleSwitch Grid.Row="5" Grid.Column="1" OnContent="Yes" OffContent="No" IsOn="{Binding NewRoom.Phone,Mode=TwoWay}"/>
+                <!--<CheckBox Grid.Row="5" Grid.Column="1" IsChecked="{Binding NewRoom.Phone,Mode=TwoWay}" Margin="0,26,0,25"/>-->
+                <ToggleSwitch Grid.Row="6" Grid.Column="1" OnContent="Yes" OffContent="No" IsOn="{Binding NewRoom.Camera,Mode=TwoWay}"/>
+                <Button Grid.Row="3" Grid.Column="1" Content="Choose image" Command="{Binding PickFileClick}"/>
+                <Button Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" Content="Add room" Width="150" Height="50" Command="{Binding CreateRoomClick}"/>
+            </Grid>
         </Grid>
     </Grid>
 </Page>

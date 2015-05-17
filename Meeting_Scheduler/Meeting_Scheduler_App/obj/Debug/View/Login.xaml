@@ -16,7 +16,7 @@
     </Page.Resources>
 
     <Page.DataContext>
-        <viewModel:VM></viewModel:VM>
+        <viewModel:Login_VM></viewModel:Login_VM>
     </Page.DataContext>
     <!--
         This grid acts as a root panel for the page that defines two rows:
@@ -49,28 +49,37 @@
             <TextBlock x:Name="pageTitle" Text="Login" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <StackPanel Grid.Row="1" Width="600" Height="300">
-            <Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="6*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1" Grid.Column="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
+                <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="Username"/>
-                <TextBlock Grid.Row="1" Grid.Column="0" Text="Password"/>
+                <TextBlock Grid.Row="0" VerticalAlignment="Center" Grid.Column="0" Text="Username" FontSize="15" FontFamily="Segoe UI"/>
+                <TextBlock Grid.Row="1" VerticalAlignment="Center" Grid.Column="0" Text="Password" FontSize="15" FontFamily="Segoe UI"/>
 
-                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding LoginUser.Username}"/>
-                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding LoginUser.Password}"/>
+                <TextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" MaxHeight="20" Text="{Binding LoginUser.Username, Mode=TwoWay}"/>
+                <PasswordBox Grid.Row="1" Grid.Column="1"  VerticalAlignment="Center" Password="{Binding LoginUser.Password, Mode=TwoWay}"/>
 
-                <Button Grid.Row="2" Grid.ColumnSpan="2" Content="Login" Margin="30,10,0,0"/>
-             
+                <Button Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Content="Login"  Width="150" Height="50" Command="{Binding LoginClick}"/>
             </Grid>
-        </StackPanel>
+        </Grid>
     </Grid>
 </Page>
 

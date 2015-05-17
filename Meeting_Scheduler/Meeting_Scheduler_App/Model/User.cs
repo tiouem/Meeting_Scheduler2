@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Meeting_Scheduler_App.Model
 {
-    public partial class User
+    public class User
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -14,9 +14,8 @@ namespace Meeting_Scheduler_App.Model
 
         [StringLength(80)]
         public string Password { get; set; }
+
         [StringLength(20)]
         public string Position { get; set; }
-
-     
     }
 }

@@ -1,8 +1,8 @@
 Assets\camera.png
 Assets\cancel.png
-Assets\check.png
 Assets\conferenceroom1.jpg
 Assets\flipchart.png
+Assets\check.png
 Assets\Logo.scale-100.png
 Assets\phone.png
 Assets\projector.png
@@ -12,7 +12,9 @@ Assets\StoreLogo.scale-100.png
 App.xbf
 Meeting_Scheduler_App.xr.xml
 View\AddMeeting.xbf
+View\AddUser.xbf
 View\CreateRoom.xbf
 View\Login.xbf
+View\MeetingDetail.xbf
 View\RoomDetail.xbf
 View\Schedule.xbf

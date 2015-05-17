@@ -3,19 +3,22 @@
     x:Class="Meeting_Scheduler_App.View.RoomDetail"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Meeting_Scheduler_App"
+    xmlns:local="using:Meeting_Scheduler_App.View"
     xmlns:common="using:Meeting_Scheduler_App.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModel="using:Meeting_Scheduler_App.ViewModel"
+    xmlns:meetingSchedulerApp="using:Meeting_Scheduler_App"
+    xmlns:convertors="using:Meeting_Scheduler_App.Convertors"
     mc:Ignorable="d" RequestedTheme="Light">
 
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <local:ImageConverter x:Key="ImageConverter"/>
+        <x:String x:Key="AppName">My Application</x:String>
+        <convertors:BooleanToCheckIcon x:Key="BooleanToCheckIcon"/>
     </Page.Resources>
     <Page.DataContext>
-        <viewModel:VM></viewModel:VM>
+        <viewModel:RoomDetail_VM></viewModel:RoomDetail_VM>
     </Page.DataContext>
 
     <!--
@@ -35,87 +38,65 @@
         </Grid.RowDefinitions>
 
         <!-- Back button and page title -->
-        <Grid DataContext="{Binding SelectedRoom2}">
+        <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="6*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+            <Button RequestedTheme="Light" x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
                         Style="{StaticResource NavigationBackButtonNormalStyle}"
                         VerticalAlignment="Top"
                         AutomationProperties.Name="Back"
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button"/>
-            <StackPanel Grid.Column="1" Orientation="Horizontal">
-                <TextBlock Text="Room number: " TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" Style="{StaticResource HeaderTextBlockStyle}"/>
-                <TextBlock x:Name="pageTitle" Text="{Binding Room_Id}" Style="{StaticResource HeaderTextBlockStyle}" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
-                <TextBlock Text=" details" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" Style="{StaticResource HeaderTextBlockStyle}"/>
+            <TextBlock Grid.Column="1" x:Name="pageTitle" Text="{Binding SelectedRoom.Type}" Style="{StaticResource HeaderTextBlockStyle}" 
+                        IsHitTestVisible="false" RequestedTheme="Light" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Image Source="{Binding SelectedRoom.Image}" Grid.ColumnSpan="2" Margin="0,0,0,20" Grid.Column="1" Grid.Row="0" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+            <StackPanel Grid.Column="1"  Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                <TextBlock Text="Capacity:   " FontSize="30" RequestedTheme="Light" VerticalAlignment="Top"/>
+                <TextBlock Text="{Binding SelectedRoom.Capacity}" FontSize="30" RequestedTheme="Light" VerticalAlignment="Top"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal">
+                <Image Source="../Assets/phone.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Source="{Binding SelectedRoom.Phone, Converter={StaticResource BooleanToCheckIcon}}" Margin="100,0,0,0"/>
+                <!--<TextBlock Text="PHONE" HorizontalAlignment="Center" RequestedTheme="Light"  FontSize="30"/>-->
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.Row="2">
+                <Image Source="../Assets/camera.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <!--<TextBlock RequestedTheme="Light" Text="CAMERA" HorizontalAlignment="Center" FontSize="30"/>-->
+                <Image Source="{Binding SelectedRoom.Camera,Converter={StaticResource BooleanToCheckIcon}}" Margin="100,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
+                <Image Source="../Assets/projector.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Source="{Binding SelectedRoom.Projector,Converter={StaticResource BooleanToCheckIcon}}" Margin="100,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Grid.Row="4" Orientation="Horizontal">
+                <Image Source="../Assets/flipchart.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <!--<TextBlock RequestedTheme="Light" Text="FLIPCHART" HorizontalAlignment="Center" FontSize="30"/>-->
+                <Image Source="{Binding SelectedRoom.FlipChart,Converter={StaticResource BooleanToCheckIcon}}" Margin="100,0,0,0"/>
             </StackPanel>
         </Grid>
-        <StackPanel Grid.Row="1" Margin="50,20" DataContext="{Binding SelectedRoom2}" HorizontalAlignment="Center" Width="1200">
-            <Grid Height="800">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="400*"/>
-                    <RowDefinition Height="68*"/>
-                    <RowDefinition Height="191*"/>
-                    <RowDefinition Height="192*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Image Source="{Binding Image}" Grid.ColumnSpan="2" Grid.Row="0" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-
-                    <TextBlock Text="Type:   " FontSize="30" VerticalAlignment="Center"/>
-                    <TextBlock Text="{Binding Type}" FontSize="30" VerticalAlignment="Center"/>
-                </StackPanel>
-                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock Text="Capacity:   " FontSize="30" VerticalAlignment="Center"/>
-                    <TextBlock Text="{Binding Capacity}" FontSize="30" VerticalAlignment="Center"/>
-                </StackPanel>
-                <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
-                    <StackPanel Orientation="Vertical">
-                        <Image Source="/Assets/phone.png" Height="150" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                        <TextBlock Text="PHONE" HorizontalAlignment="Center" FontSize="30"/>
-                    </StackPanel>
-                    <Image Source="{Binding Phone,Converter={StaticResource ImageConverter}}" Margin="100,0,0,0"/>
-
-                </StackPanel>
-
-                <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
-                    <StackPanel Orientation="Vertical">
-                        <Image Source="/Assets/projector.png" Height="150" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                        <TextBlock Text="PROJECTOR" HorizontalAlignment="Center" FontSize="30"/>
-                    </StackPanel>
-                    <Image Source="{Binding Projector,Converter={StaticResource ImageConverter}}" Margin="100,0,0,0"/>
-                </StackPanel>
-
-
-                <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
-                    <StackPanel Orientation="Vertical">
-                        <Image Source="/Assets/camera.png" Height="150" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                        <TextBlock Text="CAMERA" HorizontalAlignment="Center" FontSize="30"/>
-                    </StackPanel>
-                    <Image Source="{Binding Camera,Converter={StaticResource ImageConverter}}" Margin="100,0,0,0"/>
-
-
-                </StackPanel>
-
-                <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
-                    <StackPanel Orientation="Vertical">
-                        <Image Source="/Assets/flipchart.png" Height="150" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                        <TextBlock Text="FLIPCHART" HorizontalAlignment="Center" FontSize="30"/>
-                    </StackPanel>
-                    <Image Source="{Binding FlipChart,Converter={StaticResource ImageConverter}}" Margin="100,0,0,0"/>
-
-                </StackPanel>
-
-
-            </Grid>
-        </StackPanel>
-
-
     </Grid>
 </Page>

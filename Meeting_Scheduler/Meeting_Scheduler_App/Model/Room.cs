@@ -1,14 +1,10 @@
-namespace Meeting_Scheduler.EF
-{
-    using Meeting_Scheduler_App.Model;
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-   
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-    
-    public partial class Room
+namespace Meeting_Scheduler_App.Model
+{
+    public class Room
     {
         public Room()
         {
@@ -23,15 +19,10 @@ namespace Meeting_Scheduler.EF
         public string Type { get; set; }
 
         public int? Capacity { get; set; }
-
         public bool? Projector { get; set; }
-
         public bool? FlipChart { get; set; }
-
         public bool? Phone { get; set; }
-
         public bool? Camera { get; set; }
-
         public string Image { get; set; }
         public virtual ICollection<Meeting> Meetings { get; set; }
     }

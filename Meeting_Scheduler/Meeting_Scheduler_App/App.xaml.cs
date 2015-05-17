@@ -7,6 +7,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 using Meeting_Scheduler_App.View;
+using MSchedule.View;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 

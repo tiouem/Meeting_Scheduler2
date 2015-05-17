@@ -24,6 +24,6 @@ namespace Meeting_Scheduler_App.Common
 
 #pragma warning disable 67
         public event EventHandler CanExecuteChanged { add { } remove { } }
-#pragma war
+#pragma
     }
 }
