@@ -216,11 +216,3 @@ C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meet
 C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\View\MeetingDetail.xaml
 C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\View\MeetingDetail.xbf
 C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\bin\Debug\View\MeetingDetail.xbf
-C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\layout.resfiles
-C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\layout.resfiles.intermediate
-C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\Resources.resfiles
-C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\Resources.resfiles.intermediate
-C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\pri.resfiles
-C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\pri.resfiles.intermediate
-C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\priconfig.xml
-C:\Users\Filip\Documents\Final project\Meeting_Scheduler2\Meeting_Scheduler\Meeting_Scheduler_App\obj\Debug\System.Net.Http.Formatting\priconfig.xml.intermediate
